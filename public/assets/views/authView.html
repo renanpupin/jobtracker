@@ -1,0 +1,15 @@
+<div class="col-sm-4 col-sm-offset-4" style="margin-top: 15%;">
+    <div class="well">
+        <h3>Login</h3>
+        <form>
+            <div class="form-group">
+                <input type="email" class="form-control" placeholder="Email" ng-model="auth.email">
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control" placeholder="Password" ng-model="auth.password">
+            </div>
+            <button class="btn btn-primary" ng-click="auth.login()">Login</button>
+            <div id="login_errors" style="color:red;">{{auth.errors}}</div>
+        </form>
+    </div>
+</div>
